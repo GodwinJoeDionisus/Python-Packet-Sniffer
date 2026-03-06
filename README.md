@@ -1,68 +1,46 @@
-\# Python Packet Sniffer
-
-
+# Python Packet Sniffer
 
 A simple Python-based network packet sniffer built using the Scapy library.  
+This tool captures live network packets and displays useful information such as source IP, destination IP, and protocol.
 
-This tool captures live network packets and displays basic information such as source IP, destination IP, and protocol.
+---
 
+## Project Overview
 
+This project demonstrates how network traffic can be captured and analyzed using Python.  
+Packet sniffing is an important concept in **network security and cybersecurity monitoring**.
 
-\## Features
+The tool listens to network packets and prints important details about them in real time.
 
-\- Captures live network packets
+---
 
-\- Displays source and destination IP addresses
+## Features
 
-\- Identifies protocol used
+- Capture live network packets
+- Display source IP address
+- Display destination IP address
+- Identify protocol type
+- Lightweight and beginner-friendly cybersecurity project
 
-\- Lightweight and beginner-friendly
+---
 
+## Technologies Used
 
+- Python
+- Scapy Library
 
-\## Technologies Used
+---
 
-\- Python
+## How It Works
 
-\- Scapy
+The program uses the **Scapy library** to sniff packets from the network interface.
 
+When a packet contains an **IP layer**, the script extracts:
 
+- Source IP address
+- Destination IP address
+- Protocol number
 
-\## How It Works
+The information is then displayed in the terminal.
 
-The program uses Scapy to sniff network traffic and analyze packets.  
-
-When a packet contains an IP layer, the script extracts and prints the source IP, destination IP, and protocol.
-
-
-
-\## Usage
-
-
-
-Run the script:
-
-
-
-python packet\_sniffer.py
-
-
-
-Then generate traffic, for example:
-
-
-
-ping google.com
-
-
-
-The sniffer will display captured packets in real time.
-
-
-
-\## Disclaimer
-
-This project is created for \*\*educational and cybersecurity learning purposes only\*\*.  
-
-Only monitor networks you own or have permission to analyze.
-
+Example output:
