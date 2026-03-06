@@ -44,3 +44,59 @@ When a packet contains an **IP layer**, the script extracts:
 The information is then displayed in the terminal.
 
 Example output:
+
+```
+Source: 192.168.1.5  -->  Destination: 142.250.190.78  | Protocol: 6
+Source: 192.168.1.5  -->  Destination: 8.8.8.8  | Protocol: 17
+```
+
+---
+
+## Installation
+
+Install the required Python library:
+
+```
+pip install scapy
+```
+
+---
+
+## Usage
+
+Run the packet sniffer:
+
+```
+python packet_sniffer.py
+```
+
+Then generate network traffic, for example:
+
+```
+ping google.com
+```
+
+The sniffer will display captured packets in real time.
+
+---
+
+## Example Use Cases
+
+- Network monitoring
+- Learning packet analysis
+- Understanding network protocols
+- Cybersecurity education
+
+---
+
+## Disclaimer
+
+This project is created for **educational purposes only**.  
+Do not use this tool to monitor networks without proper authorization.
+
+---
+
+## Author
+
+Godwin Joe Dionisus  
+Cybersecurity Enthusiast | Networking | Ethical Hacking
